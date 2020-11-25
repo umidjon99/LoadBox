@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.window{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background:#3da4c0;
+    transition: 2s;
+}
+.loader{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    transition: 0.5s;
+}
+.loader span{
+    position: absolute;
+    top: 18.5px;
+    left: 0;
+    border: none;
+    width: 13px;
+    height: 13px;
+    background: #ffffff;
+    border-radius: 50%;
+}
+.three{
+    display: block;
+    animation: threeanimation 2s linear infinite;
+}
+.two{
+    display: block;
+    animation: twoanimation 2s linear infinite;
+}
+.one{
+    display: block;
+    animation: oneanimation 2s linear infinite;
+}
+@keyframes oneanimation {
+    0%{
+        display: block;
+    }
+   30%{
+        top: 18.5px;
+        left: 54%;
+    }
+   50%{
+        top: 18.5px;
+        left: 54%;
+    }
+    100%{
+        top: 18.5px;
+        left: 100%;
+    }
+}
+@keyframes twoanimation {
+    0% {
+        display: block;
+    }
+    40%{
+        top: 18.5px;
+        left: 52%;
+    }
+   60%{
+        top: 18.5px;
+        left: 52%;
+    }
+    100%{
+        top: 18.5px;
+        left: 100%;
+    }
+}
+@keyframes threeanimation {
+    0%{
+        display: block;
+    }
+    50%{
+        top: 18.5px;
+        left: 50%;
+    }
+   70%{
+        top: 18.5px;
+        left: 50%;
+    }
+    100%{
+        top: 18.5px;
+        left: 100%;
+    }
+}

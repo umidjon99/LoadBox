@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.window{
+    display: flex;
+    background: #2b2b2b;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+.loader{
+    position: relative;
+    width: 200px;
+    height: 200px;
+}
+.loader span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: rotate(calc(36deg*var(--i)));
+}
+.one:after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(125deg);
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 80px;
+    background: #757f84;
+    animation: oneanimation 2s linear infinite;
+}
+.two:after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(125deg);
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 80px;
+    background: #4e5456;
+    animation: twoanimation 2s linear infinite;
+}
+.three:after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(125deg);
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 80px;
+    background: #4e5456;
+    animation: threeanimation 2s linear infinite;
+}
+.four:after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(125deg);
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 80px;
+    background: #4e5456;
+    animation: fouranimation 2s linear infinite;
+}
+.five:after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(125deg);
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 80px;
+    background: #4e5456;
+    animation: fiveanimation 2s linear infinite;
+}
+.six:after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(125deg);
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 80px;
+    background: #4e5456;
+    animation: sixanimation 2s linear infinite;
+}
+.seven:after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(125deg);
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 80px;
+    background: #4e5456;
+    animation: sevenanimation 2s linear infinite;
+}
+.eight:after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(125deg);
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 80px;
+    background: #4e5456;
+    animation: eightnanimation 2s linear infinite;
+}
+.nine:after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(125deg);
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 80px;
+    background: #4e5456;
+    animation: nineanimation 2s linear infinite;
+}
+.ten:after{
+    content: '';
+    position: absolute;
+    border-radius: 10px;
+    transform: rotate(125deg);
+    top: 0px;
+    left: 0px;
+    width: 30px;
+    height: 80px;
+    background: #4e5456;
+    animation: tenanimation 2s linear infinite;
+}
+@keyframes oneanimation {
+    0%{
+        background: #4e5456;
+    }
+    10%{
+        background: #757f84;
+    }
+    20%{
+        background: #4e5456;
+    }
+    30%{
+        background: #4e5456;
+    }
+    40%{
+        background: #4e5456;
+    }
+    50%{
+        background: #4e5456;
+    }
+    60%{
+        background: #4e5456;
+    }
+    70%{
+        background: #4e5456;
+    }
+    80%{
+        background: #4e5456;
+    }
+    90%{
+        background: #4e5456;
+    }
+    100%{
+        background: #4e5456;
+    }
+}
+@keyframes twoanimation {
+    0%{
+        background: #4e5456;
+    }
+    10%{
+
+        background: #4e5456;
+    }
+    20%{
+        background: #757f84;
+    }
+    30%{
+        background: #4e5456;
+    }
+    40%{
+        background: #4e5456;
+    }
+    50%{
+        background: #4e5456;
+    }
+    60%{
+        background: #4e5456;
+    }
+    70%{
+        background: #4e5456;
+    }
+    80%{
+        background: #4e5456;
+    }
+    90%{
+        background: #4e5456;
+    }
+    100%{
+        background: #4e5456;
+    }
+}
+@keyframes threeanimation {
+    0%{
+        background: #4e5456;
+    }
+    10%{
+
+        background: #4e5456;
+    }
+    20%{
+        background: #4e5456;
+    }
+    30%{
+        background: #757f84;
+    }
+    40%{
+        background: #4e5456;
+    }
+    50%{
+        background: #4e5456;
+    }
+    60%{
+        background: #4e5456;
+    }
+    70%{
+        background: #4e5456;
+    }
+    80%{
+        background: #4e5456;
+    }
+    90%{
+        background: #4e5456;
+    }
+    100%{
+        background: #4e5456;
+    }
+}
+@keyframes fouranimation {
+    0%{
+        background: #4e5456;
+    }
+    10%{
+
+        background: #4e5456;
+    }
+    20%{
+        background: #4e5456;
+    }
+    30%{
+        background: #4e5456;
+    }
+    40%{
+        background: #757f84;
+    }
+    50%{
+        background: #4e5456;
+    }
+    60%{
+        background: #4e5456;
+    }
+    70%{
+        background: #4e5456;
+    }
+    80%{
+        background: #4e5456;
+    }
+    90%{
+        background: #4e5456;
+    }
+    100%{
+        background: #4e5456;
+    }
+}
+@keyframes fiveanimation {
+    0%{
+        background: #4e5456;
+    }
+    10%{
+
+        background: #4e5456;
+    }
+    20%{
+        background: #4e5456;
+    }
+    30%{
+        background: #4e5456;
+    }
+    40%{
+        background: #4e5456;
+    }
+    50%{
+        background: #757f84;
+    }
+    60%{
+        background: #4e5456;
+    }
+    70%{
+        background: #4e5456;
+    }
+    80%{
+        background: #4e5456;
+    }
+    90%{
+        background: #4e5456;
+    }
+    100%{
+        background: #4e5456;
+    }
+}
+@keyframes sixanimation {
+    0%{
+        background: #4e5456;
+    }
+    10%{
+
+        background: #4e5456;
+    }
+    20%{
+        background: #4e5456;
+    }
+    30%{
+        background: #4e5456;
+    }
+    40%{
+        background: #4e5456;
+    }
+    50%{
+        background: #4e5456;
+    }
+    60%{
+        background: #757f84;
+    }
+    70%{
+        background: #4e5456;
+    }
+    80%{
+        background: #4e5456;
+    }
+    90%{
+        background: #4e5456;
+    }
+    100%{
+        background: #4e5456;
+    }
+}
+@keyframes sevenanimation {
+    0%{
+        background: #4e5456;
+    }
+    10%{
+
+        background: #4e5456;
+    }
+    20%{
+        background: #4e5456;
+    }
+    30%{
+        background: #4e5456;
+    }
+    40%{
+        background: #4e5456;
+    }
+    50%{
+        background: #4e5456;
+    }
+    60%{
+        background: #4e5456;
+    }
+    70%{
+        background: #757f84;
+    }
+    80%{
+        background: #4e5456;
+    }
+    90%{
+        background: #4e5456;
+    }
+    100%{
+        background: #4e5456;
+    }
+}
+@keyframes eightnanimation {
+    0%{
+        background: #4e5456;
+    }
+    10%{
+
+        background: #4e5456;
+    }
+    20%{
+        background: #4e5456;
+    }
+    30%{
+        background: #4e5456;
+    }
+    40%{
+        background: #4e5456;
+    }
+    50%{
+        background: #4e5456;
+    }
+    60%{
+        background: #4e5456;
+    }
+    70%{
+        background: #4e5456;
+    }
+    80%{
+        background: #757f84;
+    }
+    90%{
+        background: #4e5456;
+    }
+    100%{
+        background: #4e5456;
+    }
+}
+@keyframes nineanimation {
+    0%{
+        background: #4e5456;
+    }
+    10%{
+
+        background: #4e5456;
+    }
+    20%{
+        background: #4e5456;
+    }
+    30%{
+        background: #4e5456;
+    }
+    40%{
+        background: #4e5456;
+    }
+    50%{
+        background: #4e5456;
+    }
+    60%{
+        background: #4e5456;
+    }
+    70%{
+        background: #4e5456;
+    }
+    80%{
+        background: #4e5456;
+    }
+    90%{
+        background: #757f84;
+    }
+    100%{
+        background: #4e5456;
+    }
+}
+@keyframes tenanimation {
+    0%{
+        background: #4e5456;
+    }
+    10%{
+
+        background: #4e5456;
+    }
+    20%{
+        background: #4e5456;
+    }
+    30%{
+        background: #4e5456;
+    }
+    40%{
+        background: #4e5456;
+    }
+    50%{
+        background: #4e5456;
+    }
+    60%{
+        background: #4e5456;
+    }
+    70%{
+        background: #4e5456;
+    }
+    80%{
+        background: #4e5456;
+    }
+    90%{
+        background: #4e5456;
+    }
+    100%{
+        background: #757f84;
+    }
+}
+/*
+<div class="window">
+    <div class="loader">
+        <span style="--i:1;" class="one"></span>
+        <span style="--i:2;" class="two"></span>
+        <span style="--i:3;" class="three"></span>
+        <span style="--i:4;" class="four"></span>
+        <span style="--i:5;" class="five"></span>
+        <span style="--i:6;" class="six"></span>
+        <span style="--i:7;" class="seven"></span>
+        <span style="--i:8;" class="eight"></span>
+        <span style="--i:9;" class="nine"></span>
+        <span style="--i:10;" class="ten"></span>
+    </div>
+</div>
+*/

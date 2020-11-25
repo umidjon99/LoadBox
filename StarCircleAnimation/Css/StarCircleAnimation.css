@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.window{
+    
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #161616;
+}
+.loader{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background:linear-gradient(to top left,transparent,transparent,rgba(0,255,249,0.5));
+    border-radius: 50%;
+    animation: raoteanimation 2s linear infinite;
+}
+.window .loader::before{
+    position: absolute;
+    content: '';
+    top: 17px;
+    left: 145px;
+    width: 20px;
+    height: 20px;
+    background: #41c228;
+    border-radius: 50%;
+    z-index: 199999;
+    box-shadow: 0 0 10px #41c228,
+    0 0 20px #41c228,0 0 30px #41c228,0 0 40px #41c228,0 0 50px #41c228,0 0 60px #41c228,0 0 70px #41c228,0 0 80px #41c228,0 0 90px #41c228,0 0 100px #41c228;
+}
+.window .loader span{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    background: #161616;
+}
+@keyframes raoteanimation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
+/*
+  <div class="window">
+        <div class="loader">
+            <span></span>
+        </div>
+    </div>
+*/

@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.window{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1;
+    min-height: 100vh;
+}
+.loader{
+    position: relative;
+    border: 4px solid #f1f1f1;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: -10px -10px 15px rgba(255, 255,255, 1),
+    10px 10px 10px rgba(0, 0,0, 0.1),
+    inset -10px -10px 15px rgba(255, 255,255, 0),
+    inset 10px 10px 10px rgba(0, 0,0, 0.1);
+}
+.loader::before{
+    content: '';
+    position: absolute;
+    top: 25px;
+    border: 4px solid #f1f1f1;
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+    border-radius: 50%;
+    background: #f1f1f1;   
+    z-index: 5;
+    box-shadow:
+    inset -10px -10px 15px rgba(255, 255,255, 0),
+    inset 10px 10px 10px rgba(0, 0,0, 0.1);
+}
+.loader span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 3;
+    background: linear-gradient(#14ffe9,#ffeb3b,#ff00e0);
+    filter: blur(5px);
+    animation: BlackHoleAnimation 0.5s linear infinite;
+}
+@keyframes BlackHoleAnimation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*
+    <div class="window">
+        <div class="loader">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+*/

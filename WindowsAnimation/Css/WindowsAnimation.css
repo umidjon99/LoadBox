@@ -1,0 +1,168 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.window{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    min-height: 100vh;
+    background: #0078d7;
+    transition: all 2s ease-in-out;
+}
+.loader{
+    position: relative;
+    width: 130px;
+    height: 130px;
+}
+.loader span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(50deg);
+}
+.one{
+    transform: rotate(25deg);
+    animation: WindowsAnimationOne 3s linear infinite;
+}
+.two{
+    transform: rotate(50deg);
+    animation: WindowsAnimationTwo 3s linear infinite;
+}
+.three{
+    transform: rotate(75deg);
+    animation: WindowsAnimationThree 3s linear infinite;
+}
+.four{
+    transform: rotate(100deg);
+    animation: WindowsAnimationFour 3s linear infinite;
+}
+.five{
+    transform: rotate(125deg);
+    animation: WindowsAnimationFive 3s linear infinite;
+}
+.six{
+    transform: rotate(150deg);
+    animation: WindowsAnimationSix 3s linear infinite;
+}
+.loader span:before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #ffffff;
+}
+@keyframes WindowsAnimationOne {
+    0%{
+        transform: rotate(25deg);
+    }
+    50%{
+        transform: rotate(385deg);
+    }
+    75%{
+        transform: rotate(590deg);
+        display: none;
+    }
+    100%{
+        display: block;
+        transform: rotate(745deg);
+    }
+}
+@keyframes WindowsAnimationTwo {
+    0%{
+        transform: rotate(50deg);
+    }
+    50%{
+        transform: rotate(410deg);
+    }
+    75%{
+        transform: rotate(590deg);
+        display: none;
+    }
+    100%{
+        display: block;
+        transform: rotate(770deg);
+    }
+}
+@keyframes WindowsAnimationThree {
+    0%{
+        transform: rotate(75deg);
+    }
+    50%{
+        transform: rotate(435deg);
+    }
+    75%{
+        transform: rotate(590deg);
+        display: none;
+    }
+    100%{
+        display: block;
+        transform: rotate(795deg);
+    }
+}
+@keyframes WindowsAnimationFour {
+    0%{
+        transform: rotate(100deg);
+    }
+    50%{
+        transform: rotate(460deg);
+    }
+    75%{
+        transform: rotate(590deg);
+        display: none;
+    }
+    100%{
+        display: block;
+        transform: rotate(820deg);
+    }
+}
+@keyframes WindowsAnimationFive {
+    0%{
+        transform: rotate(125deg);
+    }
+    50%{
+        transform: rotate(485deg);
+    }
+    75%{
+        transform: rotate(590deg);
+        display: none;
+    }
+    100%{
+        display: block;
+        transform: rotate(845deg);
+    }
+}
+@keyframes WindowsAnimationSix {
+    0%{
+        transform: rotate(150deg);
+    }
+    50%{
+        transform: rotate(510deg);
+    }
+    75%{
+        transform: rotate(590deg);
+        display: none;
+    }
+    100%{
+        display: block;
+        transform: rotate(870deg);
+    }
+}
+/*
+<div class="window">
+    <div class="loader">
+        <span class="one"></span>
+        <span class="two"></span>
+        <span class="three"></span>
+        <span class="four"></span>
+        <span class="five"></span>
+        <span class="six"></span>
+    </div>
+</div>
+*/

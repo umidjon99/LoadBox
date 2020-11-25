@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.window{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color:#2b2b2b ;
+}
+.loader{
+    position: relative;
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    z-index: 20;
+    animation: animationrotate 2s linear infinite;
+
+}
+.loader span{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(36deg*var(--i)));
+}
+.loader span b{
+    transform: rotate(120deg);
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 40px;
+    height: 50%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    animation: animationrotate1 2s linear infinite;
+
+}
+.loader span .one::before{
+    content: '';
+    position: absolute;
+    min-width: 28.5px;
+    min-height: 28.5px;
+    left: 5.75px;
+    top: -14px;
+    transform: rotate(47deg);
+    background-color:#46c73a;
+    z-index: 80;
+}
+.one{
+    background-color: #46c73a;
+}
+.loader span .two::before{
+    content: '';
+    position: absolute;
+    min-width: 28.5px;
+    min-height: 28.5px;
+    left: 5.75px;
+    top: -14px;
+    transform: rotate(47deg);
+    background-color:#ea0d5a;
+    z-index: 80;
+}
+.two{
+    background-color: #ea0d5a;
+}
+.loader span .three::before{
+    content: '';
+    position: absolute;
+    min-width: 28.5px;
+    min-height: 28.5px;
+    left: 5.75px;
+    top: -14px;
+    transform: rotate(47deg);
+    background-color:#d93df6;
+    z-index: 80;
+}
+.three{
+    background-color: #d93df6;
+}
+.loader span .four::before{
+    content: '';
+    position: absolute;
+    min-width: 28.5px;
+    min-height: 28.5px;
+    left: 5.5px;
+    top: -14px;
+    transform: rotate(47deg);
+    background-color:#00bcea;
+    z-index: 80;
+}
+.four{
+    background-color: #00bcea;
+}
+.loader span .five::before{
+    content: '';
+    position: absolute;
+    min-width: 28.5px;
+    min-height: 28.5px;
+    left: 5.5px;
+    top: -14px;
+    transform: rotate(47deg);
+    background-color:#12dce8;
+    z-index: 80;
+}
+.five{
+    background-color: #12dce8;
+}
+.loader span .six::before{
+    content: '';
+    position: absolute;
+    min-width: 28.5px;
+    min-height: 28.5px;
+    left: 5.5px;
+    top: -14px;
+    transform: rotate(47deg);
+    background-color:#46c73a;
+    z-index: 80;
+}
+.six{
+    background-color: #46c73a;
+}
+.loader span .seven::before{
+    content: '';
+    position: absolute;
+    min-width: 28.5px;
+    min-height: 28.5px;
+    left: 5.5px;
+    top: -14px;
+    transform: rotate(47deg);
+    background-color:#ff025e;
+    z-index: 80;
+}
+.seven{
+    background-color: #ff025e;
+}
+.loader span .eight::before{
+    content: '';
+    position: absolute;
+    min-width: 28.5px;
+    min-height: 28.5px;
+    left: 5.5px;
+    top: -14px;
+    transform: rotate(47deg);
+    background-color:#c53efd;
+    z-index: 80;
+}
+.eight{
+    background-color: #c53efd;
+}
+.loader span .nine::before{
+    content: '';
+    position: absolute;
+    min-width: 28.5px;
+    min-height: 28.5px;
+    left: 5.5px;
+    top: -14px;
+    transform: rotate(47deg);
+    background-color:#0dafe0;
+    z-index: 80;
+}
+.nine{
+    background-color: #0dafe0;
+}
+.loader span .ten::before{
+    content: '';
+    position: absolute;
+    min-width: 28.5px;
+    min-height: 28.5px;
+    left: 5.5px;
+    top: -14px;
+    transform: rotate(47deg);
+    background-color:#03eee7;
+    z-index: 80;
+}
+.ten{
+    background-color: #03eee7;
+}
+@keyframes animationrotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes animationrotate1{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+/*
+    <div class="window">
+        <div class="loader">
+            <span style="--i:0;">
+                <b class="one">
+                </b>
+            </span>
+            <span style="--i:1;">
+                <b class="two">
+                </b>
+            </span>
+            <span style="--i:2;">
+                <b class="three">
+                </b>
+            </span>
+            <span style="--i:3;">
+                <b class="four">
+                </b>
+            </span>
+            <span style="--i:4;">
+                <b class="five">
+                </b>
+            </span>
+            <span style="--i:5;">
+                <b class="six">
+                </b>
+            </span>
+            <span style="--i:6;">
+                <b class="seven">
+                </b>
+            </span>
+            <span style="--i:7;">
+                <b class="eight">
+                </b>
+            </span>
+            <span style="--i:8;">
+                <b class="nine">
+                </b>
+            </span>
+            <span style="--i:9;">
+                <b class="ten">
+                </b>
+            </span>
+        </div>
+    </div>
+*/

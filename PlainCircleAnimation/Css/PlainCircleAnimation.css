@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.window{ background: #242e2b;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.loader{
+    position: relative;
+    width: 200px;
+    height: 200px;    animation: rotateAnimation 2s linear infinite;
+
+}
+span{  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(calc(var(--i)*30deg));
+}
+span::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    animation: scaleAnimation 2s linear infinite;
+}
+@keyframes rotateAnimation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+} 
+@keyframes scaleAnimation{
+    0%{
+        transform: scale(0);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.icon{
+    position: absolute;
+    width: 67px;
+    height: 67px;
+    background: #3d8f0d;
+    transform: rotate(70deg);
+    top: 50px;
+    left: -40px;
+}
+.icon-plane{
+    -webkit-mask-image: url('../icon/plane.svg');
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100%;
+    -webkit-mask-position: center center;
+}
+/*
+   <div class="window">
+        <div class="loader">
+            <span style="--i:1"></span>
+            <span style="--i:2"></span>
+            <span style="--i:3"></span>
+            <span style="--i:4"></span>
+            <span style="--i:5"></span>
+            <span style="--i:6"></span>
+            <span style="--i:7"></span>
+            <span style="--i:8"></span>
+            <span style="--i:9"></span>
+            <span style="--i:10"></span>
+            <div class="icon icon-plane"></div>
+        </div>
+    </div>
+
+*/
